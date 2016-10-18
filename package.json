@@ -1,0 +1,19 @@
+{
+  "name": "ongame",
+  "version": "1.0.0",
+  "description": "FBO site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    //"url": "git+https://github.com/BlackrockDigital/startbootstrap-shop-homepage.git"
+  },
+  "author": "Nifemi SOLA-OJO",
+  "license": "ISC",
+  "bugs": {
+    //"url": "https://github.com/BlackrockDigital/startbootstrap-shop-homepage/issues"
+  },
+  //"homepage": "https://github.com/BlackrockDigital/startbootstrap-shop-homepage#readme"
+}
