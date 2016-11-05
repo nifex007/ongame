@@ -16,17 +16,25 @@ app.listen(8080, function(){
 */
 
 //path resolution
-app.use(express.static(__dirname + '/pages'));
+app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/js'));
 app.use(express.static(__dirname + '/landing'));
+app.use(express.static(__dirname + '/pages'));
 app.use(express.static(__dirname + '/fonts'));
 app.use(express.static(__dirname + '/blog'));
 
-
 app.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
+
+app.get('/subscribe',function(req,res){
   res.sendFile(path.join(__dirname+'/landing/landing.html'));
   //__dirname : It will resolve to your project folder.
 });
+
+
 
 /*app.get('/about',function(req,res){
   res.sendFile(path.join(__dirname+'/about.html'));
