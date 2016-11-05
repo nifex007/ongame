@@ -16,21 +16,27 @@ app.listen(8080, function(){
 */
 
 //path resolution
-app.use(express.static(__dirname + '/css'));
-app.use(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/views'));
+/*app.use(express.static(__dirname + '/js'));
 app.use(express.static(__dirname + '/landing'));
 app.use(express.static(__dirname + '/pages'));
 app.use(express.static(__dirname + '/fonts'));
 app.use(express.static(__dirname + '/blog'));
+*/
 
 app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/index.html'));
+  res.sendFile(path.join(__dirname+'/views/index.html'));
   //__dirname : It will resolve to your project folder.
 });
 
 
 app.get('/subscribe',function(req,res){
-  res.sendFile(path.join(__dirname+'/landing/landing.html'));
+  res.sendFile(path.join(__dirname+'/views/landing/landing.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
+app.get('/blog',function(req,res){
+  res.sendFile(path.join(__dirname+'/views/blog/blog.html'));
   //__dirname : It will resolve to your project folder.
 });
 
