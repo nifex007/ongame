@@ -6,6 +6,9 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
 }
+a {
+  text-decoration: none;
+}
 
 h1, .h1,
 h2, .h2,
